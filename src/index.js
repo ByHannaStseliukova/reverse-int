@@ -1,3 +1,9 @@
 module.exports = function reverse (n) {
-return n.toString().split('').reverse().join('');
+let numberToStroke = n.toString();
+let reverseStroke = '';
+for (let i = numberToStroke.length - 1; i >= 0; i--) {
+reverseStroke += numberToStroke[i];
 }
+return parseInt(reverseStroke);
+}
+
